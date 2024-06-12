@@ -1,0 +1,199 @@
+/* GLOBALES */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --text-primary-color: #212121;
+  --text-secondary-color: #757575;
+  --skyblue-color: #2196f3;
+  --background-bodycolor: #f5f4fa;
+  --background-headerfooter-color: #2f303a;
+  --color-white-100: #fff;
+  --primary-fontFamily: "Roboto", sans-serif;
+  --secondary-fontFamily: "Raleway", sans-serif;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-fontFamily);
+  margin: 0;
+}
+
+.container {
+  max-width: 160rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* AQUI TERMINA LOS GLOBALES */
+
+/* HEADER */
+
+.container {
+  max-width: 160rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  color: #d61313;
+}
+.header {
+  margin-top: 2rem;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.navBar__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../IMAGES/hockey1.jpg);
+  background-size: 84%, 160rem;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  padding: 20rem;
+  height: 60rem;
+}
+
+.hero__about {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../IMAGES/hockey2.jpg);
+  background-size: 84%, 120rem;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  padding: 20rem;
+  height: 60rem;
+}
+
+.hero__contact {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../IMAGES/hockey3.jpg);
+  background-size: 84%, 160rem;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  padding: 20rem;
+  height: 60rem;
+}
+
+.navBar__link {
+  position: relative;
+  font-size: 2rem;
+  background-color: #d61313;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 900;
+  transition: 0.5s ease;
+}
+
+.navBar__link--current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #0d7a60;
+  top: 6.5rem;
+  left: 0;
+  border-radius: 0.5rem;
+}
+
+.navBar__list:hover a {
+  background-color: #ff0000;
+}
+
+.upComing__title2 {
+  background-color: #0d7a60;
+  color: #c6b605;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 900;
+  border-bottom-left-radius: 0.5rem;
+  margin-bottom: 3rem;
+}
+.upComing__container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.upComing__image {
+  width: 200px;
+  height: 200px;
+}
+.upComing__list {
+  margin: 2rem 0 0 8rem;
+  display: flex;
+  flex-direction: column;
+}

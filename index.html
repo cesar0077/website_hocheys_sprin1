@@ -4,53 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIGHT DUCKS</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="./IMAGES/png-transparent-anaheim-ducks-national-hockey-league-arizona-coyotes-the-mighty-ducks-others-thumbnail-removebg-preview.png"
-        alt=""
-        width="100"
-        height="100"
-      />
-      <h1>Migghty Ducks Hockey league</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="./pages/about.html">About MDHL</a>
-          </li>
-          <li>
-            <a href="./pages/contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header container">
+      <div class="header__container">
+        <h1 class="title">Mighty Ducks Hockey league</h1>
+        <nav class="navBar">
+          <ul class="navBar__list">
+            <li class="navBar__item">
+              <a class="navBar__link navBar__link--current" href="#">Home</a>
+            </li>
+            <li>
+              <a class="navBar__link" href="./pages/about.html">About MDHL</a>
+            </li>
+            <li>
+              <a class="navBar__link" href="./pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-    <section>
-      <img
-        src="./IMAGES/hockey1.jpg"
-        alt="jugador de hockey"
-        width="500"
-        height="500"
-      />
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li>
-          <h3>August 4</h3>
-          <p>MDSL Fundraiser</p>
-        </li>
-        <li>
-          <h3>August 16</h3>
-          <p>Season Kick-off; meet the Teams</p>
-        </li>
-        <li>
-          <h3>September 1</h3>
-          <p>First Game of the Season(Check Game Schedule for details)</p>
-        </li>
-      </ul>
-    </section>
+    <div class="hero"></div>
+    <main class="main container">
+      <section class="upComing">
+        <h2 class="upComing__title2">Upcoming Events</h2>
+        <div class="upComing__container">
+          <div class="upComing__div-image">
+            <img
+              class="upComing__image"
+              src="../IMAGES/png-transparent-anaheim-ducks-national-hockey-league-arizona-coyotes-the-mighty-ducks-others-thumbnail-removebg-preview.png"
+              alt=""
+              width="100"
+              height="100"
+            />
+          </div>
+          <ul class="upComing__list">
+            <li class="upComing__item">
+              <h3 class="upComing__title3">August 4</h3>
+              <p class="upComing__text">MDSL Fundraiser</p>
+            </li>
+            <li></li>
+            <li class="upComing__item">
+              <h3 class="upComing__title3">August 16</h3>
+              <p class="upComing__text">Season Kick-off; meet the Teams</p>
+            </li>
+            <li class="upComing__item">
+              <h3 class="upComing__title3">September 1</h3>
+              <p class="upComing__text">
+                First Game of the Season(Check Game Schedule for details)
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
