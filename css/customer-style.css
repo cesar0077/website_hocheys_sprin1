@@ -138,9 +138,9 @@ img {
       rgba(0, 0, 0, 0.4)
     ),
     url(../IMAGES/hockey2.jpg);
-  background-size: 84%, 120rem;
+  background-size: 84%, 160rem;
   background-repeat: no-repeat;
-  background-position: center, center;
+  background-position: center;
   padding: 20rem;
   height: 60rem;
 }
