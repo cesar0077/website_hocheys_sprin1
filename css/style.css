@@ -180,6 +180,10 @@ img {
   color: var(--color-white-100);
 }
 
+.navBar__link:active {
+  background-color: #0d7a60;
+}
+
 .upComing__title2 {
   background-color: var(--olive-green);
   color: var(--gold-color);
